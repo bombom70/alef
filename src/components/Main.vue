@@ -11,6 +11,7 @@
         name="name"
         v-model="personData.name"
         placeholder="Имя"
+        required
       />
       <input
         class="input form-person_input"
@@ -18,6 +19,7 @@
         name="age"
         v-model.number="personData.age"
         placeholder="Возраст"
+        required
       />
       <div class="header-children">
         <h2 class="title">Дети (макс. 5)</h2>
