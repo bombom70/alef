@@ -6,12 +6,15 @@
     </div>
     <div class="children">
       <h2 class="title">Дети</h2>
-      <div class="children-list">
+      <div class="children-list" v-if="getChildren.length">
         <div class="wrapper-item" v-for="child in getChildren" :key="child.id">
           <span class="children__item data-text">
             {{ child.name }}, {{ child.age }}
           </span>
         </div>
+      </div>
+      <div v-else>
+        <span class="data-text">Нет детей</span>
       </div>
     </div>
   </div>
